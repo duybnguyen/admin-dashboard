@@ -7,7 +7,6 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <main>
         <section id="sidebar">
             <div class="tab" id="dash-title">
                 <img src="./images/dashboard.png" alt="dashboard icon">
@@ -60,33 +59,39 @@
             <div id="top-bar">
                 <div class="left-side">
                     <img src="./images/search.png" alt="search icon">
-                    <input type="text" name="" id="">
+                    <input type="text" name="search" id="search">
                 </div>
                 <div class="right-side">
                     <img src="./images/notification.png" alt="notification icon">
-                    <img src="./images/pfp.png" alt="profile picture icon" id="pfp">
+                    <img src="./images/pfp.png" alt="profile picture icon" id="top-pfp">
                     <h5>Betty Lam</h5>
                 </div>
             </div>
 
             <div id="bottom-bar">
-                <img src="./images/pfp.png" alt="profile picture icon">
-                <div id="greeting">
-                    <p>Hi there,</p>
-                    <h4>Betty Lam (@betty)</h4>
+                <div class="left-side">
+                    <img src="./images/pfp.png" alt="profile picture icon" id="bottom-pfp">
+                    <div id="greeting">
+                        <p>Hi there,</p>
+                        <h4>Betty Lam (@betty)</h4>
+                    </div>
                 </div>
-                <button class="header-btn">
-                    New
-                </button>
-                <button class="header-btn">
-                    Upload
-                </button>
-                <button class="header-btn">
-                    Share
-                </button>
+
+                <div class="right-side btns">
+                    <button class="header-btn">
+                        New
+                    </button>
+                    <button class="header-btn">
+                        Upload
+                    </button>
+                    <button class="header-btn">
+                        Share
+                    </button>
+                </div>
             </div>
         </section>
 
+    <main >
         <section id="projects-container">
             <h2>Your Projects</h2>
 
@@ -151,59 +156,69 @@
                     </div>
                 </div>
             </div>
+        </section>
 
             <section id="announcements-container">
-                <h2>Announcements</h2>
+                <h2>Announcements</h2   >
                 <div class="announcements">
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ex!...</p>
+                    <div class="wrapper">
+                        <h3>Site Maintenance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ex!...</p>
+                    </div>
 
                     <div class="line-break"></div>
 
-                    <h3>Community Share Day</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, exercitationem.</p>
+                    <div class="wrapper">
+                        <h3>Community Share Day</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, exercitationem.</p>
+                    </div>
 
                     <div class="line-break"></div>
 
-                    <h3>Updated Privacy Policy</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, impedit.</p>
+                    <div class="wrapper">
+                        <h3>Updated Privacy Policy</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, impedit.</p>
+                    </div>
                 </div>
             </section>
 
             <section id="trending-container">
-                <div class="user">
-                    <img src="./images/pfp.png" alt="profile picture icon">
-                    <div class="username">
-                        <p>@tegan</p>
-                        <h4>World Peace Builder</h4>
-                    </div>
-                </div>
+                <h2>Trending</h2>
 
-                <div class="user">
-                    <img src="./images/pfp.png" alt="profile picture icon">
-                    <div class="username">
-                        <p>@morgan</p>
-                        <h4>Super Cool Project</h4>
+                <div class="users">
+                    <div class="user">
+                        <img src="./images/pfp.png" alt="profile picture icon">
+                        <div class="username">
+                            <p>@tegan</p>
+                            <h4>World Peace Builder</h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="user">
-                    <img src="./images/pfp.png" alt="profile picture icon">
-                    <div class="username">
-                        <p>@kendall</p>
-                        <h4>Life Changing App</h4>
+                    <div class="user">
+                        <img src="./images/pfp.png" alt="profile picture icon">
+                        <div class="username">
+                            <p>@morgan</p>
+                            <h4>Super Cool Project</h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="user">
-                    <img src="./images/pfp.png" alt="profile picture icon">
-                    <div class="username">
-                        <p>@alex</p>
-                        <h4>No Traffic Maker</h4>
+                    <div class="user">
+                        <img src="./images/pfp.png" alt="profile picture icon">
+                        <div class="username">
+                            <p>@kendall</p>
+                            <h4>Life Changing App</h4>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <img src="./images/pfp.png" alt="profile picture icon">
+                        <div class="username">
+                            <p>@alex</p>
+                            <h4>No Traffic Maker</h4>
+                        </div>
                     </div>
                 </div>
             </section>
-        </section>
-    </main>
-</body>
+        </main>
+    </body>
 </html>
